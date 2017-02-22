@@ -20,7 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name="app.layout.Empty" />
-        <activity android:name=".Window2"></activity>
+        <activity android:name=".Window2" />
+        <activity
+            android:name=".RecipeListView"
+            android:label="@string/title_activity_ingredient_list_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
