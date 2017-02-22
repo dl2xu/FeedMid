@@ -26,7 +26,7 @@ public class DBHandler extends SQLiteOpenHelper {
     // Contacts table name
     private static final String TABLE_INGREDIENTS = "ingredients";
     // Ingredients table columns names
-    private static final String KEY_ID = "id";
+    private static final String KEY_LOCATION = "location";
     private static final String KEY_NAME = "name";
     private static final String KEY_OP = "original_price";
     private static final String KEY_DP = "discount_price";
@@ -38,7 +38,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_INGREDIENTS + "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT," + KEY_OP + " FLOAT," + KEY_DP + " FLOAT" + ")";
+        String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_INGREDIENTS + "(" + KEY_LOCATION + " TEXT," + KEY_NAME + " TEXT," + KEY_OP + " FLOAT," + KEY_DP + " FLOAT," + " PRIMARY KEY (" + KEY_LOCATION + ", " + KEY_NAME + "))";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
@@ -65,12 +65,12 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     //Reads row
-    public Products getIngredients(int id){
+    public Products getIngredients(String location, String name){
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_INGREDIENTS, new String[]{KEY_ID, KEY_NAME, KEY_OP, KEY_DP}, KEY_ID + "=?", new String[] {String.valueOf(id)}, null, null, null, null);
+        Cursor cursor = db.query(TABLE_INGREDIENTS, new String[]{KEY_LOCATION, KEY_NAME, KEY_OP, KEY_DP}, KEY_LOCATION + "=? OR " + KEY_NAME + "=?", new String[] {location, name}, null, null, null, null);
         if(cursor != null)
             cursor.moveToFirst();
-        Products contact = new Products(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getFloat(2), cursor.getFloat(3));
+        Products contact = new Products(cursor.getString(0), cursor.getString(1), cursor.getFloat(2), cursor.getFloat(3));
         //return ingredients
         return contact;
     }
@@ -86,7 +86,7 @@ public class DBHandler extends SQLiteOpenHelper {
         if (cursor.moveToFirst()){
             do{
                 Products ingredients = new Products();
-                ingredients.setId(Integer.parseInt(cursor.getString(0)));
+                ingredients.setLocation((cursor.getString(0)));
                 ingredients.setName(cursor.getString(1));
                 ingredients.setOP(cursor.getFloat(2));
                 ingredients.setDP(cursor.getFloat(3));
@@ -118,13 +118,13 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(KEY_OP, ingredient.getOP());
         values.put(KEY_DP, ingredient.getDP());
 
-        return db.update(TABLE_INGREDIENTS, values, KEY_ID + " = ?", new String[]{String.valueOf(ingredient.getId())});
+        return db.update(TABLE_INGREDIENTS, values, KEY_LOCATION + " = ? OR " + KEY_NAME + " = ?", new String[]{ingredient.getLocation(), ingredient.getName()});
     }
 
     //Deleting a product
     public void deleteProduct(Products ingredient){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_INGREDIENTS, KEY_ID + " = ?", new String[]{String.valueOf(ingredient.getId())});
+        db.delete(TABLE_INGREDIENTS, KEY_LOCATION + " = ? OR " + KEY_NAME + " = ?", new String[]{ingredient.getLocation(), ingredient.getName()});
         db.close();
     }
 

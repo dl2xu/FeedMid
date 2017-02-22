@@ -6,22 +6,22 @@ package com.hackathon.feedmid.feedmid;
  */
 
 public class Products {
-    private int id;
+    private String location;
     private String name;
     private float original_price;
     private float discount_price;
 
     public Products(){}
 
-    public Products(int id, String name, float op, float dp) {
-        this.id = id;
+    public Products(String location, String name, float op, float dp) {
+        this.location = location;
         this.name = name;
         this.original_price = op;
         this.discount_price = dp;
     }
 
-    public void setId(int id){
-        this.id = id;
+    public void setLocation(String location){
+        this.location = location;
     }
 
     public void setName(String name){
@@ -36,8 +36,8 @@ public class Products {
         this.discount_price = dp;
     }
 
-    public int getId(){
-        return id;
+    public String getLocation(){
+        return location;
     }
 
     public String getName(){

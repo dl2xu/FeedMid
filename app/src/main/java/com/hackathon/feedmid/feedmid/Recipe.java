@@ -10,6 +10,8 @@ public class Recipe {
     private float price;
     private int serving;
     private String ingredients;
+    private String bestLocation;
+    private float bestPrice;
 
     public Recipe(){}
 
@@ -60,4 +62,12 @@ public class Recipe {
     public String getIngredients(){
         return ingredients;
     }
+
+    public String getBestLocation(){return bestLocation;}
+
+    public void setBestLocation(String bestlocation){ this.bestLocation = bestlocation;}
+
+    public float getBestPrice(){return bestPrice;}
+
+    public void setBestPrice(float bestPrice){this.bestPrice = bestPrice;}
 }
