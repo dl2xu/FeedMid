@@ -55,7 +55,7 @@ public class DBHandler extends SQLiteOpenHelper {
     public void addIngredient(Products ingredient){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-
+        values.put(KEY_LOCATION, ingredient.getLocation());
         values.put(KEY_NAME, ingredient.getName());
         values.put(KEY_OP, ingredient.getOP());
         values.put(KEY_DP, ingredient.getDP());

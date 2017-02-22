@@ -42,11 +42,11 @@ public class FullscreenActivity extends AppCompatActivity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
     */
-        //db = new DBHandler(this);
-        db2 = new DBHandler2(this);
+        db = new DBHandler(this);
+        //db2 = new DBHandler2(this);
 
-        //runDB1();
-        runDB2();
+        runDB1();
+        //runDB2();
     }
 
 
@@ -59,16 +59,16 @@ public class FullscreenActivity extends AppCompatActivity {
 
     private void runDB1(){
         Log.d("Insert: ", "Inserting ...");
-        db.addIngredient(new Products(1,"Sweet Potatoes", 5.99f, 3.99f));
-        db.addIngredient(new Products(2,"Beef Sirloin", 15.99f, 12.99f));
-        db.addIngredient(new Products(3,"Broccoli", 8.99f, 5.99f));
+        db.addIngredient(new Products("Superstore","Sweet Potatoes", 5.99f, 3.99f));
+        db.addIngredient(new Products("Safeway","Beef Sirloin", 15.99f, 12.99f));
+        db.addIngredient(new Products("Co-op","Broccoli", 8.99f, 5.99f));
 
 
         Log.d("Reading: ", "Reading all ingredients...");
         List<Products> products = db.getAllIngredients();
 
         for (Products product:products){
-            String log = "Id: " + product.getId() + " Name: " + product.getName() + " Original Price: " + product.getOP() + " Discount Price: " + product.getDP();
+            String log = "Location: " + product.getLocation() + " Name: " + product.getName() + " Original Price: " + product.getOP() + " Discount Price: " + product.getDP();
             Log.d("Product:: ", log);
         }
 
