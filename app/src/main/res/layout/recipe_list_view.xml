@@ -6,13 +6,18 @@
         android:layout_width="match_parent"
         android:layout_height="495dp"
         android:id="@+id/ingredientScrollView"
-        android:layout_centerHorizontal="true" >
-
+        android:layout_centerHorizontal="true"
+        android:background="#BD8D46"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentTop="true">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/ingredientList"></LinearLayout>
+            android:id="@+id/ingredientList"
+            android:background="#FCFAE1"
+            >
+            </LinearLayout>
     </ScrollView>
 
     <Button
@@ -21,7 +26,7 @@
         android:text="Grocery List"
         android:id="@+id/button2"
         android:layout_gravity="center_horizontal|bottom"
-        android:background="#ee0000"
+        android:background="#B9121B"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textAppearance="@android:style/TextAppearance.Large" />
