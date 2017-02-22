@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+
+
   <component name="AndroidLayouts">
     <shared>
       <config>
@@ -17,6 +19,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recipe_list_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recipe_list_view.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/sample_recipe_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_recipe_view.xml" />
     </list>
+
+
     <ignored path="FeedMid.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,6 +44,7 @@
     <favorites_list name="FeedMid" />
   </component>
   <component name="FileEditorManager">
+
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="Window2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hackathon/feedmid/feedmid/Window2.java">
@@ -101,13 +106,16 @@
               <folding />
             </state>
           </provider>
+
         </entry>
       </file>
     </leaf>
   </component>
+
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="GradleLocalSettings">
     <option name="availableProjects">
       <map>
@@ -139,7 +147,9 @@
           <value>
             <list>
               <ExternalTaskPojo>
+
                 <option name="description" value="Displays the sub-projects of root project 'FeedMid'." />
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -148,14 +158,20 @@
                 <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="processReleaseJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateReleaseAssets" />
               </ExternalTaskPojo>
@@ -169,16 +185,22 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prePackageMarkerForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
                 <option name="description" value="Displays the configuration model of root project 'FeedMid'. [incubating]" />
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
                 <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
@@ -554,6 +576,7 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateDebugResValues" />
               </ExternalTaskPojo>
@@ -570,6 +593,7 @@
                 <option name="description" value="Run unit tests for the debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="testDebugUnitTest" />
+
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
@@ -1122,6 +1146,7 @@
                 <option name="name" value="prepareComAndroidSupportAppcompatV72321Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareReleaseUnitTestDependencies" />
               </ExternalTaskPojo>
@@ -1145,6 +1170,7 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preReleaseUnitTestBuild" />
+
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1336,8 +1362,10 @@
     </option>
     <option name="modificationStamps">
       <map>
+
         <entry key="$PROJECT_DIR$" value="4463308307398" />
         <entry key="C:\Users\the_m_000\Documents\GitHub\FeedMid" value="4463282581838" />
+
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1565,6 +1593,8 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.jar" />
+
+
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1589,6 +1619,7 @@
       <projects_view />
     </option>
   </component>
+
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -1598,6 +1629,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/sample_recipe_view.xml" />
       </list>
     </option>
+
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -1630,6 +1662,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+
+
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1666,7 +1700,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1689,11 +1723,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+
+
     <property name="device.picker.selection" value="5374f2bd" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2035,6 +2072,8 @@
       <method />
     </configuration>
   </component>
+
+
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -2045,10 +2084,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487769435121</updated>
+
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
+
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -2084,6 +2125,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2098,6 +2140,7 @@
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
+
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hackathon/feedmid/feedmid/Window2.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2184,6 +2227,7 @@
           <folding />
         </state>
       </provider>
+
     </entry>
   </component>
 </project>
