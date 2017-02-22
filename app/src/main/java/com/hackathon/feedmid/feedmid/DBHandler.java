@@ -38,14 +38,14 @@ public class DBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        String CREATE_CONTACTS_TABLE = "CREATE TABLE" + TABLE_INGREDIENTS + "(" + KEY_ID + "INTEGER PRIMARY KEY" + KEY_NAME + "TEXT" + KEY_OP + "FLOAT" + KEY_DP + "FLOAT" + ")";
+        String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_INGREDIENTS + "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT," + KEY_OP + " FLOAT," + KEY_DP + " FLOAT" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //Drop older table if existed
-        db.execSQL("Drop TABLE IF EXISTS" + TABLE_INGREDIENTS);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_INGREDIENTS);
         //Create tables again
         onCreate(db);
 
