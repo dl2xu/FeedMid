@@ -12,7 +12,7 @@ public class Window2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_window2);
 
-        Button back = (Button) findViewById(R.id.backButton);
+        Button back = (Button) findViewById(R.id.backButton1);
         back.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 finish();
