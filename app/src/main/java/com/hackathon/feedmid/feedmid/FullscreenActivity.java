@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -41,7 +42,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
 
     private void nextWindow(){
-        Intent intent = new Intent(this, Window2.class);
+        Intent intent = new Intent(this, RecipeListView.class);
         startActivity(intent);
     }
 

@@ -24,7 +24,8 @@
         android:background="#ee0000"
         android:layout_marginTop="75dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/enterpricerangeTextView" />
+        android:layout_below="@+id/enterpricerangeTextView"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 
     <TextView
         android:layout_width="wrap_content"
