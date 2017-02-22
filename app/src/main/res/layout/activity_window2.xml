@@ -9,12 +9,64 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hackathon.feedmid.feedmid.Window2">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+    </ScrollView>
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:text="Go Back"
-        android:id="@+id/backButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:background="#dc5f5f" />
+        android:id="@+id/backButton1"
+        android:background="#dc5f5f"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Go Back"
+        android:id="@+id/backButton2"
+        android:background="#dc5f5f"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Go Back"
+        android:id="@+id/backButton3"
+        android:background="#dc5f5f"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Go Back"
+        android:id="@+id/backButton4"
+        android:background="#dc5f5f"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Go Back"
+        android:id="@+id/backButton5"
+        android:background="#dc5f5f"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
