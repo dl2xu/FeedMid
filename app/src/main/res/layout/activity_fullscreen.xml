@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nextPageButton"
         android:layout_gravity="center_horizontal|bottom"
-        android:background="@drawable/Feed_Me_Normal"
+        android:background="@drawable/feed_me_normal"
         android:layout_below="@+id/editText"
         android:layout_alignLeft="@+id/enterpricerangeTextView"
         android:layout_alignStart="@+id/enterpricerangeTextView"
